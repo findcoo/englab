@@ -58,7 +58,7 @@
 - 명사구
 
   the boys
-  #+BEGIN_SRC dot :file images/noun-phrase1.svg :exports results :results output
+  #+BEGIN_SRC dot :file images/noun-phrase1.svg :exports results
 digraph NounPhrase1 {
 rankdir=LR;
 NP -> D;
