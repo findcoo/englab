@@ -55,9 +55,8 @@ NP -> N;
   #+RESULTS:
   [[file:images/noun-phrase1.svg]]
 
- 
   the tall boys
-  #+BEGIN_SRC dot :file images/noun-phrase2.svg
+  #+BEGIN_SRC dot :file images/noun-phrase2.svg :exports results
 digraph NounPhrase2 {
 NP -> D;
 NP -> A;
@@ -71,7 +70,7 @@ NP -> N;
 - 동사구
 
   They {ate}.
-  #+BEGIN_SRC dot :file images/verb-phrase1.svg
+  #+BEGIN_SRC dot :file images/verb-phrase1.svg :exports results
 digraph VerbPhrase1 {
 VP -> V;
 }
@@ -81,7 +80,7 @@ VP -> V;
   [[file:images/verb-phrase1.svg]]
   
   They {ate lunch}.
-  #+BEGIN_SRC dot :file images/verb-phrase2.svg
+  #+BEGIN_SRC dot :file images/verb-phrase2.svg :exports results
 digraph VerbPhrase2 {
 VP -> V;
 VP -> NP;
@@ -92,7 +91,7 @@ VP -> NP;
   [[file:images/verb-phrase2.svg]]
 
   They {ate lunch in the cafe}.
-  #+BEGIN_SRC dot :file images/verb-phrase3.svg
+  #+BEGIN_SRC dot :file images/verb-phrase3.svg :exports results
 digraph VerbPhrase3 {
 VP -> V;
 VP -> NP;
