@@ -43,8 +43,9 @@
 **** 문장의 구성성분
 단어에 수식어가 붙어 더 큰 표현이 되는데, 무법범주는 변하지 않는다. 단어에서 층위를 한단계 상승하여 구로써 문장을 구성하는 경우가 이에 해당된다.
 - 명사구
+
   the boys
-  #+BEGIN_SRC dot :file images/noun-phrase1.svg
+  #+BEGIN_SRC dot :file images/noun-phrase1.svg :exports results
 digraph NounPhrase1 {
 NP -> D;
 NP -> N;
@@ -53,6 +54,7 @@ NP -> N;
 
   #+RESULTS:
   [[file:images/noun-phrase1.svg]]
+
  
   the tall boys
   #+BEGIN_SRC dot :file images/noun-phrase2.svg
@@ -67,6 +69,7 @@ NP -> N;
   [[file:images/noun-phrase2.svg]]
 
 - 동사구
+
   They {ate}.
   #+BEGIN_SRC dot :file images/verb-phrase1.svg
 digraph VerbPhrase1 {

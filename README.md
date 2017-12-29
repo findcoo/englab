@@ -1,25 +1,25 @@
 
 # Table of Contents
 
-1.  [Englab](#org57e00f4)
-    1.  [배경지식](#org750c07b)
-        1.  [변형생성문법 이론](#org8ca7ce5)
-        2.  [언어의 창조성](#org70578af)
-    2.  [통사론](#org1715861)
-        1.  [영어 문장의 기본성분](#orgcd7b7a1)
+1.  [Englab](#org1ac35a9)
+    1.  [배경지식](#org1074fe1)
+        1.  [변형생성문법 이론](#orgee135b0)
+        2.  [언어의 창조성](#org1e68742)
+    2.  [통사론](#orge693a0e)
+        1.  [영어 문장의 기본성분](#org725bb26)
 
 
-<a id="org57e00f4"></a>
+<a id="org1ac35a9"></a>
 
 # Englab
 
 
-<a id="org750c07b"></a>
+<a id="org1074fe1"></a>
 
 ## 배경지식
 
 
-<a id="org8ca7ce5"></a>
+<a id="orgee135b0"></a>
 
 ### 변형생성문법 이론
 
@@ -32,7 +32,7 @@
 > **변형생성문법은 언어를 하나의 완벽한 규칙 체계로 본다.** 인간이 언어를 쉽게 배울 수 있는 것은 인간이 언어능력을 갖고 태어났고 그리고 언어가 규칙으로 되어 있다고 보기 때문이다. &#x2013; 영어통사론 - 변형생성문법 이론 중
 
 
-<a id="org70578af"></a>
+<a id="org1e68742"></a>
 
 ### 언어의 창조성
 
@@ -42,12 +42,12 @@
 > 이고 언어습득이란 이러한 체계를 내재화하는 과정이다. 변형생성문법에서는 이러한 규칙이 오직 문법적인 문장만을 생성하고, 그리고 문법적인 모든 문장은 생성한다고 한다. 이런점에서 이 규칙들의 체계를 생성문법이라고 한다. &#x2013; 영어통사론 - 언어의 창조성 중
 
 
-<a id="org1715861"></a>
+<a id="orge693a0e"></a>
 
 ## 통사론
 
 
-<a id="orgcd7b7a1"></a>
+<a id="org725bb26"></a>
 
 ### 영어 문장의 기본성분
 
@@ -77,6 +77,7 @@
     단어에 수식어가 붙어 더 큰 표현이 되는데, 무법범주는 변하지 않는다. 단어에서 층위를 한단계 상승하여 구로써 문장을 구성하는 경우가 이에 해당된다.
     
     -   명사구
+        
         the boys
         
             digraph NounPhrase1 {
@@ -85,18 +86,19 @@
             }
         
         ![img](images/noun-phrase1.svg)
-        
-        the tall boys
-        
-            digraph NounPhrase2 {
-            NP -> D;
-            NP -> A;
-            NP -> N;
-            }
-        
-        ![img](images/noun-phrase2.svg)
+    
+    the tall boys
+    
+        digraph NounPhrase2 {
+        NP -> D;
+        NP -> A;
+        NP -> N;
+        }
+    
+    ![img](images/noun-phrase2.svg)
     
     -   동사구
+        
         They {ate}.
         
             digraph VerbPhrase1 {
