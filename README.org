@@ -1,3 +1,16 @@
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t
+#+OPTIONS: broken-links:nil c:nil creator:nil d:(not "LOGBOOK") date:t e:t
+#+OPTIONS: email:nil f:t inline:t num:t p:nil pri:nil prop:nil stat:t tags:t
+#+OPTIONS: tasks:t tex:t timestamp:t title:t toc:t todo:t |:t
+#+TITLE: README
+#+DATE: <2017-12-29 Fri>
+#+AUTHOR: findcoo
+#+EMAIL: findcoo@findcoo-pc
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.3.1 (Org mode 9.1.3)
+
 * Englab
 ** 배경지식
 *** 변형생성문법 이론
@@ -45,7 +58,7 @@
 - 명사구
 
   the boys
-  #+BEGIN_SRC dot :file images/noun-phrase1.svg :exports results
+  #+BEGIN_SRC dot :file images/noun-phrase1.svg :exports results :results output
 digraph NounPhrase1 {
 NP -> D;
 NP -> N;
