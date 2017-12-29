@@ -1,26 +1,26 @@
 
 # Table of Contents
 
-1.  [Englab](#orgfb064ef)
-    1.  [배경지식](#org4936e17)
-        1.  [변형생성문법 이론](#orgb5e0ae6)
-        2.  [언어의 창조성](#org2f5e79a)
-    2.  [통사론](#org897523b)
-        1.  [영어 문장의 기본성분](#orge8ec884)
+1.  [Englab](#org499259b)
+    1.  [배경지식](#org526118f)
+        1.  [변형생성문법 이론](#orgab68a5e)
+        2.  [언어의 창조성](#org44503b4)
+    2.  [통사론](#org0ea01c0)
+        1.  [영어 문장의 기본성분](#orgc0ea5b8)
 
 
 
-<a id="orgfb064ef"></a>
+<a id="org499259b"></a>
 
 # Englab
 
 
-<a id="org4936e17"></a>
+<a id="org526118f"></a>
 
 ## 배경지식
 
 
-<a id="orgb5e0ae6"></a>
+<a id="orgab68a5e"></a>
 
 ### 변형생성문법 이론
 
@@ -33,7 +33,7 @@
 > **변형생성문법은 언어를 하나의 완벽한 규칙 체계로 본다.** 인간이 언어를 쉽게 배울 수 있는 것은 인간이 언어능력을 갖고 태어났고 그리고 언어가 규칙으로 되어 있다고 보기 때문이다. &#x2013; 영어통사론 - 변형생성문법 이론 중
 
 
-<a id="org2f5e79a"></a>
+<a id="org44503b4"></a>
 
 ### 언어의 창조성
 
@@ -43,12 +43,12 @@
 > 이고 언어습득이란 이러한 체계를 내재화하는 과정이다. 변형생성문법에서는 이러한 규칙이 오직 문법적인 문장만을 생성하고, 그리고 문법적인 모든 문장은 생성한다고 한다. 이런점에서 이 규칙들의 체계를 생성문법이라고 한다. &#x2013; 영어통사론 - 언어의 창조성 중
 
 
-<a id="org897523b"></a>
+<a id="org0ea01c0"></a>
 
 ## 통사론
 
 
-<a id="orge8ec884"></a>
+<a id="orgc0ea5b8"></a>
 
 ### 영어 문장의 기본성분
 
@@ -82,9 +82,7 @@
         the boys
         
             digraph NounPhrase1 {
-            rankdir=LR;
-            NP -> D;
-            NP -> N;
+            NP -> {D N};
             }
         
         ![img](images/noun-phrase1.svg)
@@ -92,10 +90,7 @@
         the tall boys
         
             digraph NounPhrase2 {
-            rankdir=LR;
-            NP -> D;
-            NP -> A;
-            NP -> N;
+            NP -> {D A N};
             }
         
         ![img](images/noun-phrase2.svg)
@@ -114,9 +109,7 @@
         They {ate lunch}.
         
             digraph VerbPhrase2 {
-            rankdir=LR;
-            VP -> V;
-            VP -> NP;
+            VP -> {V NP};
             }
         
         ![img](images/verb-phrase2.svg)
@@ -124,10 +117,7 @@
         They {ate lunch in the cafe}.
         
             digraph VerbPhrase3 {
-            rankdir=LR;
-            VP -> V;
-            VP -> NP;
-            VP -> PP;
+            VP -> {V NP PP};
             }
         
         ![img](images/verb-phrase3.svg)

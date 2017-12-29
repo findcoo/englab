@@ -60,9 +60,7 @@
   the boys
   #+BEGIN_SRC dot :file images/noun-phrase1.svg :exports results
 digraph NounPhrase1 {
-rankdir=LR;
-NP -> D;
-NP -> N;
+NP -> {D N};
 }
   #+END_SRC
 
@@ -72,10 +70,7 @@ NP -> N;
   the tall boys
   #+BEGIN_SRC dot :file images/noun-phrase2.svg :exports results
 digraph NounPhrase2 {
-rankdir=LR;
-NP -> D;
-NP -> A;
-NP -> N;
+NP -> {D A N};
 }
   #+END_SRC
 
@@ -98,9 +93,7 @@ VP -> V;
   They {ate lunch}.
   #+BEGIN_SRC dot :file images/verb-phrase2.svg :exports results
 digraph VerbPhrase2 {
-rankdir=LR;
-VP -> V;
-VP -> NP;
+VP -> {V NP};
 }
   #+END_SRC
 
@@ -110,10 +103,7 @@ VP -> NP;
   They {ate lunch in the cafe}.
   #+BEGIN_SRC dot :file images/verb-phrase3.svg :exports results
 digraph VerbPhrase3 {
-rankdir=LR;
-VP -> V;
-VP -> NP;
-VP -> PP;
+VP -> {V NP PP};
 }
   #+END_SRC
 
