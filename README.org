@@ -52,7 +52,7 @@ NP -> N;
 }
   #+END_SRC
 
-  #+RESULTS:
+  #+RESLTS:
   [[file:images/noun-phrase1.svg]]
 
   the tall boys
