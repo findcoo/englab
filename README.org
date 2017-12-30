@@ -109,4 +109,70 @@ VP -> {V NP PP};
 
   #+RESULTS:
   [[file:images/verb-phrase3.svg]]
+
+- 형용사구
+
+  The boy was {happy}.
+  #+BEGIN_SRC dot :file images/adjectical-phrase1.svg :exports results
+digraph AdjecticalPhrase1 {
+rankdir=LR;
+AP -> A;
+} 
+  #+END_SRC
+
+  #+RESULTS:
+  [[file:images/adjectical-phrase1.svg]]
+  
+  The boy was {very happy}.
+  #+BEGIN_SRC dot :file images/adjectical-phrase2.svg :exports results
+digraph AdjecticalPhrase2 {
+AP -> { Adv A };
+}
+  #+END_SRC
+
+  #+RESULTS:
+  [[file:images/adjectical-phrase2.svg]]
+
+- 부사구
+  
+  He works {very slowly}.
+  #+BEGIN_SRC dot :file images/adverbial-phrase1.svg :exports results
+digraph AdverbialPhrase1 {
+AdvP1 -> {AdvP2 Adv};
+} 
+  #+END_SRC
+
+  #+RESULTS:
+  [[file:images/adverbial-phrase1.svg]]
+
+- 조동사와 접속사
+  
+  조동사와 접속사는 일반적으로 구로 취급되지 않고 단어로 취급된다. 그리고 문장도 구로 취급된다.
+  
+  
+- 문장 분석
+
+  The student met the professor.
+  #+BEGIN_SRC dot :file images/word-level.svg :exports results
+  digraph WordLevel {
+    S -> {D1 N1 V D2 N2};
+  }
+  #+END_SRC
+
+  단어 층위에서의 문장 분석 결과.
+  #+RESULTS:
+  [[file:images/word-level.svg]]
+ 
+  #+BEGIN_SRC dot :file images/phrase-level.svg :exports results
+  digraph PhraseLevel {
+    S -> {NP VP};
+    NP -> {D1 N1};
+    VP -> {V NP2};
+    NP2 -> {D2 N2};
+  } 
+  #+END_SRC
+
+  #+RESULTS:
+  [[file:images/phrase-level.svg]]
+  
   

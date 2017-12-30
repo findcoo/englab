@@ -1,26 +1,26 @@
 
 # Table of Contents
 
-1.  [Englab](#org499259b)
-    1.  [배경지식](#org526118f)
-        1.  [변형생성문법 이론](#orgab68a5e)
-        2.  [언어의 창조성](#org44503b4)
-    2.  [통사론](#org0ea01c0)
-        1.  [영어 문장의 기본성분](#orgc0ea5b8)
+1.  [Englab](#org231e201)
+    1.  [배경지식](#org8f83fbd)
+        1.  [변형생성문법 이론](#orgb9fef9f)
+        2.  [언어의 창조성](#orgbcff98a)
+    2.  [통사론](#org06685d7)
+        1.  [영어 문장의 기본성분](#orge2bb78d)
 
 
 
-<a id="org499259b"></a>
+<a id="org231e201"></a>
 
 # Englab
 
 
-<a id="org526118f"></a>
+<a id="org8f83fbd"></a>
 
 ## 배경지식
 
 
-<a id="orgab68a5e"></a>
+<a id="orgb9fef9f"></a>
 
 ### 변형생성문법 이론
 
@@ -33,7 +33,7 @@
 > **변형생성문법은 언어를 하나의 완벽한 규칙 체계로 본다.** 인간이 언어를 쉽게 배울 수 있는 것은 인간이 언어능력을 갖고 태어났고 그리고 언어가 규칙으로 되어 있다고 보기 때문이다. &#x2013; 영어통사론 - 변형생성문법 이론 중
 
 
-<a id="org44503b4"></a>
+<a id="orgbcff98a"></a>
 
 ### 언어의 창조성
 
@@ -43,12 +43,12 @@
 > 이고 언어습득이란 이러한 체계를 내재화하는 과정이다. 변형생성문법에서는 이러한 규칙이 오직 문법적인 문장만을 생성하고, 그리고 문법적인 모든 문장은 생성한다고 한다. 이런점에서 이 규칙들의 체계를 생성문법이라고 한다. &#x2013; 영어통사론 - 언어의 창조성 중
 
 
-<a id="org0ea01c0"></a>
+<a id="org06685d7"></a>
 
 ## 통사론
 
 
-<a id="orgc0ea5b8"></a>
+<a id="orge2bb78d"></a>
 
 ### 영어 문장의 기본성분
 
@@ -121,4 +121,58 @@
             }
         
         ![img](images/verb-phrase3.svg)
+    
+    -   형용사구
+        
+        The boy was {happy}.
+        
+            digraph AdjecticalPhrase1 {
+            rankdir=LR;
+            AP -> A;
+            } 
+        
+        ![img](images/adjectical-phrase1.svg)
+        
+        The boy was {very happy}.
+        
+            digraph AdjecticalPhrase2 {
+            AP -> { Adv A };
+            }
+        
+        ![img](images/adjectical-phrase2.svg)
+    
+    -   부사구
+        
+        He works {very slowly}.
+        
+            digraph AdverbialPhrase1 {
+            AdvP1 -> {AdvP2 Adv};
+            } 
+        
+        ![img](images/adverbial-phrase1.svg)
+    
+    -   조동사와 접속사
+        
+        조동사와 접속사는 일반적으로 구로 취급되지 않고 단어로 취급된다. 그리고 문장도 구로 취급된다.
+    
+    -   문장 분석
+        
+        The student met the professor.
+        
+            digraph WordLevel {
+              S -> {D1 N1 V D2 N2};
+            }
+        
+        단어 층위에서의 문장 분석 결과.
+        
+        ![img](images/word-level.svg)
+        
+            digraph PhraseLevel {
+              S -> {NP VP};
+              NP -> {D1 N1};
+              VP -> {V NP2};
+              NP2 -> {D2 N2};
+            } 
+        
+        ![img](images/phrase-level.svg)
 
